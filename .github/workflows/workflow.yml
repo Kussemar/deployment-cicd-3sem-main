@@ -1,7 +1,7 @@
 name: API JAVALIN WORKFLOW
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
     branches: [ main ]
 jobs:
@@ -20,4 +20,3 @@ jobs:
       -
         name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
-        
